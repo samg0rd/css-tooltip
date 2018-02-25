@@ -22,3 +22,23 @@
 }
 
 /* STYLING AND TAKING CARE OF OUR CONTENT */
+
+.tool::before{
+    border-block-end: solid;
+    border-width: 1em 0.75em 0 0.75em;
+    border-color: #3e474f transparent transparent transparent;
+    bottom: 100%;
+    margin-left: -0.5em;
+    content: "";
+}
+
+.tool::after{
+    background: #3e474f;
+    border-radius: .25em;
+    bottom: 180%;
+    color: #edeff0;
+    width: 17.5em;
+    padding: 1em;
+    margin-left: -8.75em;
+    content: attr(data-tip);
+}
